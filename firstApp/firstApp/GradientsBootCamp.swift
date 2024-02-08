@@ -16,10 +16,10 @@ struct GradientsBootCamp: View {
         RoundedRectangle(cornerRadius: 30)
             .fill(
                 /// Linear Gradient
-//                LinearGradient(
-//                    colors: [Color.red, Color.orange, Color.blue],
-//                    startPoint: .topLeading,
-//                    endPoint: .bottomTrailing)
+                LinearGradient(
+                    colors: [Color.red, Color.orange, Color.blue],
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing)
                 
                 /// Radial Gradient
                 /// This gradient in form of circles.
@@ -31,13 +31,13 @@ struct GradientsBootCamp: View {
                 
                 /// Angular Gradient
                 /// This makes angels
-                AngularGradient(
-                    colors: [Color.blue, Color.red],
-                    center: .center,
-                    angle: .degrees(90 + 90)
-                )
+//                AngularGradient(
+//                    colors: [Color.blue, Color.red],
+//                    center: .center,
+//                    angle: .degrees(90 + 90)
+//                )
             ) // end of fill.
-            .frame(width: 400, height:350)
+            .frame(width: 400, height:1050)
             
     }
 }

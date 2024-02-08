@@ -25,10 +25,10 @@ struct ColorsBootCamp: View {
 //                Color.blue
 //                Color(red: 0.52, green: 0.11, blue: 0.29)
 //                Color(UIColor.secondarySystemBackground)
-                Color("CustomColor") // you will find this "CustomColor" in the assets folder, so you can play with it as you wish.
+                Color("NewCustomColor") // you will find this "CustomColor" in the assets folder, so you can play with it as you wish.
             )
-            .frame(width:300, height: 200)
-            .shadow(color: Color("CustomColor").opacity(0.7),radius: 30, x: 20.30, y:10.30)
+            .frame(width:300, height: 500)
+            .shadow(color: Color("NewCustomColor").opacity(0.7),radius: 30, x: 20.30, y:10.30)
             
     }
 }
