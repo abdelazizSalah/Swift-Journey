@@ -10,9 +10,9 @@ import SwiftUI
 /*
   Important Notes:
  ---------------------
- 1. The order of calling the utility methods, matter, actually I do not till know, why does it actually matter, but it does.
+ 1. The order of calling the utility methods, matter.
  2. .system() allows you to manually customize the fonts of the application.
- 3. baselineOffset() determine the height of the test, and how they should be separated vertically.
+ 3. baselineOffset() determine the height of the text, and how they should be separated vertically.
  
  */
 

@@ -12,7 +12,7 @@
  
     They are transparent, and we can not see them, so we need to debug it, and understand how does they work.
  
-    The most important argument is the alignment argument, because it define where exactly we should insert the element in the screen.
+    The most important argument is the *alignment argument* , because it define where exactly we should insert the element in the screen.
  
     Usually the min parameter, must perceed the max parameter.
  
@@ -42,10 +42,10 @@ struct FramesBootcamp: View {
         /// Now lets play
         Text ("Lets Play")
             .background(Color.green)
-            .frame(height: 300 ,alignment: .topLeading)
+            .frame(height: 300 ,alignment: .bottomLeading)
             .background(Color.red)
             .frame(width: 300, height: 200, alignment: .bottomTrailing)
-            .background(Color.blue)
+            .background(Color.black)
             .frame(width: .infinity, height: 500, alignment: .center)
             .background(Color.gray)
             .frame(width: 400, height: 700, alignment: .bottomTrailing)

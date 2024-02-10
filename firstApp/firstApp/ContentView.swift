@@ -13,12 +13,16 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Zizo Is Creating the first Application on the iphone device :D").font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/).fontWeight(.bold).foregroundColor(Color.red).multilineTextAlignment(.center)
-            Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+            Text("Zizo Is Creating the first Application on the iphone device :D")
+                .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
+                .fontWeight(.bold)
+                .foregroundColor(Color.red)
+                .multilineTextAlignment(.center)
+            Button("This is a button.") {
+                
             }
         }
-        .padding()
+        .padding(.top, 50)
     }
 }
 
