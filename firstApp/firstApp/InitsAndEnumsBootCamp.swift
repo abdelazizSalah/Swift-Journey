@@ -28,9 +28,11 @@
  command + f -> select text to search, select next using command + G.
  command + option + [ -> move line of code up.
  command + option + ] -> move line of code down.
+ command + shift + L -> show library. 
  control + k -> cut the whole line.
  control + I -> formate the code.
  control + space -> show all possible options in any widget.
+ option + click on widget to see the documentation.
  they are very useful
  */
 import SwiftUI
