@@ -22,7 +22,7 @@ struct BindingBootCamp: View {
             
             /// content
             /// to pass a binding object, we must perceed the name with the dollar $ sign.
-            /// I believe that this means that we pass it by reference, but I am not sure. 
+            /// I believe that this means that we pass it by reference, but I am not sure.
             /// but if you think about it, it is actually the same logic.
             ButtonView(backgroundColor: $backGroundColor, title: $title)
         }

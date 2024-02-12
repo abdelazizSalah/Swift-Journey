@@ -39,11 +39,13 @@ struct ShapesBootCamp: View {
         /// Ellipse
         /// same properties as we have discussed, in the circle
         Ellipse()
-            .stroke(style: StrokeStyle(
+            .stroke(
+                style: StrokeStyle(
             lineWidth: 20,
             lineCap: .butt,
             dash:[20]
-            ))
+            )
+            )
             .fill(Color.yellow) // must come before frame.
             .frame(width: 200,height:150) // and so on
             
