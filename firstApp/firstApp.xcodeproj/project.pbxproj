@@ -44,6 +44,8 @@
 		7B7ECCF12B79515100A0CB6C /* ExtractingFunctionsAndViewsFromBodyBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7ECCF02B79515100A0CB6C /* ExtractingFunctionsAndViewsFromBodyBootCamp.swift */; };
 		7B7ECCF32B79544500A0CB6C /* ExtractingSubViewsBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7ECCF22B79544500A0CB6C /* ExtractingSubViewsBootCamp.swift */; };
 		7B7ECCF52B7957D000A0CB6C /* BindingBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7ECCF42B7957D000A0CB6C /* BindingBootCamp.swift */; };
+		7B91C6232B7C22440020268E /* alertsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B91C6222B7C22440020268E /* alertsBootcamp.swift */; };
+		7B91C6252B7C29530020268E /* ActionSheetsBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B91C6242B7C29530020268E /* ActionSheetsBootCamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,8 @@
 		7B7ECCF02B79515100A0CB6C /* ExtractingFunctionsAndViewsFromBodyBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractingFunctionsAndViewsFromBodyBootCamp.swift; sourceTree = SOURCE_ROOT; };
 		7B7ECCF22B79544500A0CB6C /* ExtractingSubViewsBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractingSubViewsBootCamp.swift; sourceTree = SOURCE_ROOT; };
 		7B7ECCF42B7957D000A0CB6C /* BindingBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingBootCamp.swift; sourceTree = "<group>"; };
+		7B91C6222B7C22440020268E /* alertsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertsBootcamp.swift; sourceTree = "<group>"; };
+		7B91C6242B7C29530020268E /* ActionSheetsBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetsBootCamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +138,6 @@
 		7B6974412B6FAAFF00604D5C = {
 			isa = PBXGroup;
 			children = (
-				7B2B9CDE2B7AF0C2000FD32E /* ListBootCamp.swift */,
 				7B69744C2B6FAAFF00604D5C /* firstApp */,
 				7B69745D2B6FAB0000604D5C /* firstAppTests */,
 				7B6974672B6FAB0000604D5C /* firstAppUITests */,
@@ -156,6 +159,9 @@
 			isa = PBXGroup;
 			children = (
 				7B4E0F8F2B782D740069CFCB /* forEachBootCamp.swift */,
+				7B91C6222B7C22440020268E /* alertsBootcamp.swift */,
+				7B91C6242B7C29530020268E /* ActionSheetsBootCamp.swift */,
+				7B2B9CDE2B7AF0C2000FD32E /* ListBootCamp.swift */,
 				7B69744D2B6FAAFF00604D5C /* firstAppApp.swift */,
 				7B4E0F962B78378B0069CFCB /* ListViewBootCamp.swift */,
 				7B651E122B7A3D94008A6544 /* ifElseBootCamps.swift */,
@@ -373,12 +379,14 @@
 				7B69747C2B6FBC7A00604D5C /* TextBootcamp.swift in Sources */,
 				7B6974822B6FE36900604D5C /* GradientsBootCamp.swift in Sources */,
 				7B4E0F8E2B78256A0069CFCB /* InitsAndEnumsBootCamp.swift in Sources */,
+				7B91C6252B7C29530020268E /* ActionSheetsBootCamp.swift in Sources */,
 				7B69744E2B6FAAFF00604D5C /* firstAppApp.swift in Sources */,
 				7B651E172B7A4E5E008A6544 /* AnimationCurvesAndTimingBootCamp.swift in Sources */,
 				7B71A6E22B7470CA0059373F /* VStack,HStacks,And_ZStacks.swift in Sources */,
 				7B651E152B7A47AE008A6544 /* AnimationBootCamp.swift in Sources */,
 				7B2B9CDF2B7AF0C2000FD32E /* ListBootCamp.swift in Sources */,
 				7B651E192B7A5158008A6544 /* TransitionsBootCamp.swift in Sources */,
+				7B91C6232B7C22440020268E /* alertsBootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

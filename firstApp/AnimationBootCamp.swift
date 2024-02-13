@@ -36,7 +36,7 @@ struct AnimationBootCamp: View {
                     withAnimation(
                         Animation
                             .default
-                            .repeatForever()
+//                            .repeatForever()
                     ){
                         self.isAnimated.toggle()
                     }
@@ -54,11 +54,11 @@ struct AnimationBootCamp: View {
                 ))
                 .frame(width: 200)
                 .rotationEffect(Angle(degrees: isAnimated ? 360 : 0))
-                .animation(
-                    Animation
-                        .default
-                        .repeatForever(autoreverses: true) /// This is the way we want to apply the animation with nothing to be done to the button, however, this is not the typical way of doing the animation, usually, we apply the animation after pressing on some buttons.
-                )
+//                .animation(
+//                    Animation
+//                        .default
+////                        .repeatForever(autoreverses: true) /// This is the way we want to apply the animation with nothing to be done to the button, however, this is not the typical way of doing the animation, usually, we apply the animation after pressing on some buttons.
+//                )
             
         }
     }

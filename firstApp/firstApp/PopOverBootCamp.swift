@@ -23,10 +23,10 @@ struct PopOverBootCamp: View {
             
             /// Content
             content
-            /// METHOD 1  -  USING SHEETS
-            //        .sheet(isPresented: $showNewScreen, content: {
-            //            AnotherScreen()
-            //        })
+//            / METHOD 1  -  USING SHEETS
+                    .sheet(isPresented: $showNewScreen, content: {
+                        AnotherScreen(showNewScreen: $showNewScreen)
+                    })
                     
             /// METHOD 2  -  USING TRANSITIONS
 //            ZStack() {
@@ -43,10 +43,10 @@ struct PopOverBootCamp: View {
 //            } .zIndex(2.0) /// this indicates that this must be the second layer no matter what happens, to allow the transition effect of the fading out
             
             /// METHOD 3  -- ANIMATION
-            AnotherScreen(showNewScreen: $showNewScreen)
-                .padding(.top, 10)
-                .offset(y: showNewScreen ? 0 : UIScreen.main.bounds.height)
-                .animation(Animation.spring)
+//            AnotherScreen(showNewScreen: $showNewScreen)
+//                .padding(.top, 10)
+//                .offset(y: showNewScreen ? 0 : UIScreen.main.bounds.height)
+//                .animation(Animation.spring)
         }
     }
     
@@ -122,5 +122,5 @@ struct AnotherScreen: View {
 }
 
 #Preview {
-    PopOverBootCamp().animation(Animation.easeInOut(duration: 1))
+    PopOverBootCamp()
 }
