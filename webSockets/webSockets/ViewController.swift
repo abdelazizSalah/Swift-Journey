@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, URLSessionWebSocketDelegate {
     private var webSocket: URLSessionWebSocketTask?
-    
+    private var counter:Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBlue
@@ -20,7 +20,7 @@ class ViewController: UIViewController, URLSessionWebSocketDelegate {
         )
         
         let url = URL (
-            string: "wss://demo.piesocket.com/v3/channel_123?api_key=VCXCEuvhGcBDP7XhiJJUDvR1e1D3eiVjgZ9VRiaV&notify_self")
+            string: "wss://socketsbay.com/wss/v2/1/demo/")
         
         webSocket = session.webSocketTask(with: url!)
         
@@ -41,19 +41,19 @@ class ViewController: UIViewController, URLSessionWebSocketDelegate {
             print("Recieve is done")
         webSocket?.receive(completionHandler: { [weak self] result in
             switch result {
-            case .success( let message ) :
-                switch message {
-                case .data(let data) :
-                    print ("Got data: \(data)")
-                case .string(let message) :
-                    print ("Got String: \(message)")
-                @unknown default:
-                    print("default")
-                    break
+                case .success( let message ) :
+                    switch message {
+                        case .data(let data) :
+                            print ("Got data: \(data)")
+                        case .string(let message) :
+                            print ("Got String: \(message)")
+                        @unknown default:
+                            print("default")
+                            break
                 }
                 
-            case .failure( let error):
-                print("Recieve error: \(error)")
+                case .failure( let error):
+                    print("Recieve error: \(error)")
             }
             
             self?.recieve()
@@ -64,21 +64,47 @@ class ViewController: UIViewController, URLSessionWebSocketDelegate {
         
             print("send is done")
         DispatchQueue.global().asyncAfter(deadline: .now() + 1) {
-            self.send()
+           
             self.webSocket?
                 .send(
                     .string("Send new message: \(Int.random(in: 0...1000))"),
-                    completionHandler: {
-                        error in
+                    completionHandler: {  error in
                         if let error = error {
                             print( "Send error: \(error)")
-                    }
+                        } else {
+                            self.send()
+                        }
             })
         }
     }
     
     func close ( ) {
         webSocket?.cancel(with: .goingAway, reason: "Demo endded".data(using: .utf8))
+    }
+    
+    
+    func urlSession(
+        _
+        session: URLSession,
+        webSocketTask: URLSessionWebSocketTask,
+        didOpenWithProtocol protocol: String?
+    ) {
+        
+            
+        if counter >= 5 {
+            close()
+        } else {
+            print("URL Session is done")
+        print("Did connect to socket")
+        counter += 1
+        ping()
+        send()
+        
+        recieve()
+        
+        print("All are done")
+        
+        }
     }
     
     func urlSession(
@@ -89,23 +115,6 @@ class ViewController: UIViewController, URLSessionWebSocketDelegate {
         reason: Data?
     ) {
         print("Did close connection with reason")
-    }
-    func urlSession(
-        _
-        session: URLSession,
-        webSocketTask: URLSessionWebSocketTask,
-        didOpenWithProtocol protocol: String?
-    ) {
-        
-            print("URL Session is done")
-        print("Did connect to socket")
-        
-        ping()
-        send()
-        
-        recieve()
-        
-        print("All are done")
     }
     
 }
