@@ -35,7 +35,9 @@ struct ListBootCamp: View {
                     ForEach(fruits, id: \.self) { fruit in /// this is how we use the for each items, instead of accessing using the index.
                         Text(fruit.capitalized.uppercased()).frame(maxWidth: .infinity).background(Color.green)
                             .foregroundColor(.white).font(.title2).padding(.all, 5) /// this is where things gets cooler ;)
-                    }.onDelete(// this code, makes items inside the list dismissable.
+                    }
+                    
+                    .onDelete(// this code, makes items inside the list dismissable.
                         perform: delete
                     )
                     .onMove(perform: move) // this is a shorter way to make the code more cleaner.
