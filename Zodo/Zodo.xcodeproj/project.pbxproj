@@ -16,6 +16,9 @@
 		7B40D02C2B87B45800553F80 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B40D02B2B87B45800553F80 /* ListView.swift */; };
 		7B40D02E2B87B69600553F80 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B40D02D2B87B69600553F80 /* ListRowView.swift */; };
 		7B40D0302B87B69E00553F80 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B40D02F2B87B69E00553F80 /* AddView.swift */; };
+		7B9DDE272B87CAE4007755F7 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9DDE262B87CAE4007755F7 /* ItemModel.swift */; };
+		7B9DDE2A2B87CFE4007755F7 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9DDE292B87CFE4007755F7 /* ListViewModel.swift */; };
+		7B9DDE2C2B87E8A1007755F7 /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9DDE2B2B87E8A1007755F7 /* NoItemsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		7B40D02B2B87B45800553F80 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		7B40D02D2B87B69600553F80 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		7B40D02F2B87B69E00553F80 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		7B9DDE262B87CAE4007755F7 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		7B9DDE292B87CFE4007755F7 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		7B9DDE2B2B87E8A1007755F7 /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,8 @@
 		7B40CFFF2B87AFF500553F80 /* Zodo */ = {
 			isa = PBXGroup;
 			children = (
+				7B9DDE282B87CFD1007755F7 /* ViewModels */,
+				7B9DDE252B87CAD4007755F7 /* Models */,
 				7B40D02A2B87B43300553F80 /* Views */,
 				7B40D0002B87AFF500553F80 /* ZodoApp.swift */,
 				7B40D0042B87AFF700553F80 /* Assets.xcassets */,
@@ -137,8 +145,25 @@
 				7B40D02B2B87B45800553F80 /* ListView.swift */,
 				7B40D02D2B87B69600553F80 /* ListRowView.swift */,
 				7B40D02F2B87B69E00553F80 /* AddView.swift */,
+				7B9DDE2B2B87E8A1007755F7 /* NoItemsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7B9DDE252B87CAD4007755F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B9DDE262B87CAE4007755F7 /* ItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7B9DDE282B87CFD1007755F7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7B9DDE292B87CFE4007755F7 /* ListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,9 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B9DDE272B87CAE4007755F7 /* ItemModel.swift in Sources */,
 				7B40D0302B87B69E00553F80 /* AddView.swift in Sources */,
+				7B9DDE2A2B87CFE4007755F7 /* ListViewModel.swift in Sources */,
 				7B40D0012B87AFF500553F80 /* ZodoApp.swift in Sources */,
 				7B40D02C2B87B45800553F80 /* ListView.swift in Sources */,
+				7B9DDE2C2B87E8A1007755F7 /* NoItemsView.swift in Sources */,
 				7B40D02E2B87B69600553F80 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

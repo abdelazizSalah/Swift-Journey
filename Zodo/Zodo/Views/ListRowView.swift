@@ -9,18 +9,32 @@ import SwiftUI
 
 
 struct ListRowView: View {
-    let todo: String
+    var todo: ItemModel
     var body: some View {
-            HStack() {
-                Image( systemName: "checkmark.circle")
-                Text (todo)
-            }
+        HStack() {
+            Image(
+                systemName :  todo.isDone ? "checkmark.circle" : "circle" )
+            .foregroundStyle(todo.isDone ? .green : .red)
+            Text (todo.title)
+            Spacer()
+        }
+        .font(.title2)
+        .padding(.all, 8)
+        
     }
 }
 
 #Preview {
     
-    NavigationView() {
-        ListRowView(todo: "This is the first item")
-    }
+        NavigationView() {
+            ListRowView(todo: ItemModel(title: "This is the first item", isDone: false))
+        }
+    
+}
+#Preview {
+    
+        NavigationView() {
+            ListRowView(todo: ItemModel(title: "This is the first item", isDone: true))
+        }
+    
 }

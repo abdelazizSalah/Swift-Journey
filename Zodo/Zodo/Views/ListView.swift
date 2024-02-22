@@ -8,18 +8,35 @@
 import SwiftUI
 
 struct ListView: View {
-    @State var todos: [String] = [
-        "This is the first item",
-        "This is the second item",
-        "This is the third item",
-    ]
+    @EnvironmentObject var listViewModel: ListViewModel
     var body: some View {
-        List ()
-        {
-            ForEach (todos, id: \.self) { todo in
-                ListRowView(todo: todo)
+        ZStack() {
+            if listViewModel.todos.isEmpty {
+                NoItemsView()
+                    .transition(AnyTransition.opacity.animation(.easeInOut(duration: 0.5)))
+            } else {
+                List ()
+                {
+                    ForEach (listViewModel.todos) { todo in
+                        //                Text(todo.title)
+                        ListRowView(todo: todo)
+                            .onTapGesture(count: 2) {
+                                withAnimation(.bouncy()){
+                                        listViewModel.updateItem(item: todo)
+                                }
+                            }
+                    }
+                    .onDelete(perform: listViewModel.deleteTodo)
+                    .onMove(perform: listViewModel.moveTodo)
+                }
+                
             }
         }
+        .navigationTitle("Todo List 📝")
+        .navigationBarItems(
+            leading: listViewModel.todos.isEmpty ? nil : EditButton(),
+            trailing: listViewModel.todos.isEmpty ? nil :  NavigationLink(destination: AddView(), label: {Text("Add")})
+        )
     }
 }
 
@@ -27,6 +44,7 @@ struct ListView: View {
     NavigationView () {
         ListView()
             .navigationTitle("Todo List 📝")
-    }
+    }.environmentObject(ListViewModel())
 }
+
 
