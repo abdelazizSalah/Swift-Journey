@@ -19,24 +19,25 @@ struct picker: View {
     var body: some View {
         VStack() {
 //            videoExampleOfFilters
-            segmentPickerStyle
+//            segmentPickerStyle
 //
-//            HStack() {
-//                Text("Age: ")
-//                Text(pickedVal)
-//            }
-//            Picker(
-//                selection: $pickedVal, content: {
-//                    ForEach(18..<100) {num in
-//                        Text("\(num)")
-//                            .tag("\(num)")
-//                    }
-//                    
-//                }, label: {
-//                    Text("Dum Label")
-//                }) /// end of picker
-////            .pickerStyle(WheelPickerStyle()) /// this make it looks like a wheel.
-//            .pickerStyle(MenuPickerStyle()) /// this is the defualt view, select from menu.
+            HStack() {
+                Text("Age: ")
+                Text(pickedVal)
+            }
+            Picker(
+                selection: $pickedVal
+                , content: {
+                    ForEach(18..<100) {num in
+                        Text("\(num)")
+                            .tag("\(num)")
+                    }
+                    
+                }, label: {
+                    Text("Dum Label")
+                }) /// end of picker
+//            .pickerStyle(WheelPickerStyle()) /// this make it looks like a wheel.
+            .pickerStyle(MenuPickerStyle()) /// this is the defualt view, select from menu.
             
         }
     }
