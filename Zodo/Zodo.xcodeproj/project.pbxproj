@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B40D0012B87AFF500553F80 /* ZodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B40D0002B87AFF500553F80 /* ZodoApp.swift */; };
+		7B40D0052B87AFF700553F80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B40D0042B87AFF700553F80 /* Assets.xcassets */; };
+		7B40D0082B87AFF700553F80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B40D0072B87AFF700553F80 /* Preview Assets.xcassets */; };
+		7B40D0122B87AFF700553F80 /* ZodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B40D0112B87AFF700553F80 /* ZodoTests.swift */; };
+		7B40D01C2B87AFF700553F80 /* ZodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B40D01B2B87AFF700553F80 /* ZodoUITests.swift */; };
+		7B40D01E2B87AFF700553F80 /* ZodoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B40D01D2B87AFF700553F80 /* ZodoUITestsLaunchTests.swift */; };
+		7B40D02C2B87B45800553F80 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B40D02B2B87B45800553F80 /* ListView.swift */; };
+		7B40D02E2B87B69600553F80 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B40D02D2B87B69600553F80 /* ListRowView.swift */; };
+		7B40D0302B87B69E00553F80 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B40D02F2B87B69E00553F80 /* AddView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B40D00E2B87AFF700553F80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B40CFF52B87AFF500553F80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B40CFFC2B87AFF500553F80;
+			remoteInfo = Zodo;
+		};
+		7B40D0182B87AFF700553F80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B40CFF52B87AFF500553F80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B40CFFC2B87AFF500553F80;
+			remoteInfo = Zodo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B40CFFD2B87AFF500553F80 /* Zodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B40D0002B87AFF500553F80 /* ZodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodoApp.swift; sourceTree = "<group>"; };
+		7B40D0042B87AFF700553F80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B40D0072B87AFF700553F80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7B40D00D2B87AFF700553F80 /* ZodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B40D0112B87AFF700553F80 /* ZodoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodoTests.swift; sourceTree = "<group>"; };
+		7B40D0172B87AFF700553F80 /* ZodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B40D01B2B87AFF700553F80 /* ZodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodoUITests.swift; sourceTree = "<group>"; };
+		7B40D01D2B87AFF700553F80 /* ZodoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7B40D02B2B87B45800553F80 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		7B40D02D2B87B69600553F80 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		7B40D02F2B87B69E00553F80 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B40CFFA2B87AFF500553F80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B40D00A2B87AFF700553F80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B40D0142B87AFF700553F80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B40CFF42B87AFF500553F80 = {
+			isa = PBXGroup;
+			children = (
+				7B40CFFF2B87AFF500553F80 /* Zodo */,
+				7B40D0102B87AFF700553F80 /* ZodoTests */,
+				7B40D01A2B87AFF700553F80 /* ZodoUITests */,
+				7B40CFFE2B87AFF500553F80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B40CFFE2B87AFF500553F80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B40CFFD2B87AFF500553F80 /* Zodo.app */,
+				7B40D00D2B87AFF700553F80 /* ZodoTests.xctest */,
+				7B40D0172B87AFF700553F80 /* ZodoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B40CFFF2B87AFF500553F80 /* Zodo */ = {
+			isa = PBXGroup;
+			children = (
+				7B40D02A2B87B43300553F80 /* Views */,
+				7B40D0002B87AFF500553F80 /* ZodoApp.swift */,
+				7B40D0042B87AFF700553F80 /* Assets.xcassets */,
+				7B40D0062B87AFF700553F80 /* Preview Content */,
+			);
+			path = Zodo;
+			sourceTree = "<group>";
+		};
+		7B40D0062B87AFF700553F80 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7B40D0072B87AFF700553F80 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7B40D0102B87AFF700553F80 /* ZodoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B40D0112B87AFF700553F80 /* ZodoTests.swift */,
+			);
+			path = ZodoTests;
+			sourceTree = "<group>";
+		};
+		7B40D01A2B87AFF700553F80 /* ZodoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7B40D01B2B87AFF700553F80 /* ZodoUITests.swift */,
+				7B40D01D2B87AFF700553F80 /* ZodoUITestsLaunchTests.swift */,
+			);
+			path = ZodoUITests;
+			sourceTree = "<group>";
+		};
+		7B40D02A2B87B43300553F80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B40D02B2B87B45800553F80 /* ListView.swift */,
+				7B40D02D2B87B69600553F80 /* ListRowView.swift */,
+				7B40D02F2B87B69E00553F80 /* AddView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B40CFFC2B87AFF500553F80 /* Zodo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B40D0212B87AFF700553F80 /* Build configuration list for PBXNativeTarget "Zodo" */;
+			buildPhases = (
+				7B40CFF92B87AFF500553F80 /* Sources */,
+				7B40CFFA2B87AFF500553F80 /* Frameworks */,
+				7B40CFFB2B87AFF500553F80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zodo;
+			productName = Zodo;
+			productReference = 7B40CFFD2B87AFF500553F80 /* Zodo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B40D00C2B87AFF700553F80 /* ZodoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B40D0242B87AFF700553F80 /* Build configuration list for PBXNativeTarget "ZodoTests" */;
+			buildPhases = (
+				7B40D0092B87AFF700553F80 /* Sources */,
+				7B40D00A2B87AFF700553F80 /* Frameworks */,
+				7B40D00B2B87AFF700553F80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B40D00F2B87AFF700553F80 /* PBXTargetDependency */,
+			);
+			name = ZodoTests;
+			productName = ZodoTests;
+			productReference = 7B40D00D2B87AFF700553F80 /* ZodoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7B40D0162B87AFF700553F80 /* ZodoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B40D0272B87AFF700553F80 /* Build configuration list for PBXNativeTarget "ZodoUITests" */;
+			buildPhases = (
+				7B40D0132B87AFF700553F80 /* Sources */,
+				7B40D0142B87AFF700553F80 /* Frameworks */,
+				7B40D0152B87AFF700553F80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B40D0192B87AFF700553F80 /* PBXTargetDependency */,
+			);
+			name = ZodoUITests;
+			productName = ZodoUITests;
+			productReference = 7B40D0172B87AFF700553F80 /* ZodoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B40CFF52B87AFF500553F80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					7B40CFFC2B87AFF500553F80 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					7B40D00C2B87AFF700553F80 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 7B40CFFC2B87AFF500553F80;
+					};
+					7B40D0162B87AFF700553F80 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 7B40CFFC2B87AFF500553F80;
+					};
+				};
+			};
+			buildConfigurationList = 7B40CFF82B87AFF500553F80 /* Build configuration list for PBXProject "Zodo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B40CFF42B87AFF500553F80;
+			productRefGroup = 7B40CFFE2B87AFF500553F80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B40CFFC2B87AFF500553F80 /* Zodo */,
+				7B40D00C2B87AFF700553F80 /* ZodoTests */,
+				7B40D0162B87AFF700553F80 /* ZodoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B40CFFB2B87AFF500553F80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B40D0082B87AFF700553F80 /* Preview Assets.xcassets in Resources */,
+				7B40D0052B87AFF700553F80 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B40D00B2B87AFF700553F80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B40D0152B87AFF700553F80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B40CFF92B87AFF500553F80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B40D0302B87B69E00553F80 /* AddView.swift in Sources */,
+				7B40D0012B87AFF500553F80 /* ZodoApp.swift in Sources */,
+				7B40D02C2B87B45800553F80 /* ListView.swift in Sources */,
+				7B40D02E2B87B69600553F80 /* ListRowView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B40D0092B87AFF700553F80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B40D0122B87AFF700553F80 /* ZodoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B40D0132B87AFF700553F80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B40D01E2B87AFF700553F80 /* ZodoUITestsLaunchTests.swift in Sources */,
+				7B40D01C2B87AFF700553F80 /* ZodoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B40D00F2B87AFF700553F80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B40CFFC2B87AFF500553F80 /* Zodo */;
+			targetProxy = 7B40D00E2B87AFF700553F80 /* PBXContainerItemProxy */;
+		};
+		7B40D0192B87AFF700553F80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B40CFFC2B87AFF500553F80 /* Zodo */;
+			targetProxy = 7B40D0182B87AFF700553F80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7B40D01F2B87AFF700553F80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B40D0202B87AFF700553F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B40D0222B87AFF700553F80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Zodo/Preview Content\"";
+				DEVELOPMENT_TEAM = M874KH9UDT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zizo.Zodo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B40D0232B87AFF700553F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Zodo/Preview Content\"";
+				DEVELOPMENT_TEAM = M874KH9UDT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zizo.Zodo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7B40D0252B87AFF700553F80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M874KH9UDT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zizo.ZodoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zodo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Zodo";
+			};
+			name = Debug;
+		};
+		7B40D0262B87AFF700553F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M874KH9UDT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zizo.ZodoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zodo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Zodo";
+			};
+			name = Release;
+		};
+		7B40D0282B87AFF700553F80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M874KH9UDT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zizo.ZodoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Zodo;
+			};
+			name = Debug;
+		};
+		7B40D0292B87AFF700553F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M874KH9UDT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zizo.ZodoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Zodo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B40CFF82B87AFF500553F80 /* Build configuration list for PBXProject "Zodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B40D01F2B87AFF700553F80 /* Debug */,
+				7B40D0202B87AFF700553F80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B40D0212B87AFF700553F80 /* Build configuration list for PBXNativeTarget "Zodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B40D0222B87AFF700553F80 /* Debug */,
+				7B40D0232B87AFF700553F80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B40D0242B87AFF700553F80 /* Build configuration list for PBXNativeTarget "ZodoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B40D0252B87AFF700553F80 /* Debug */,
+				7B40D0262B87AFF700553F80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B40D0272B87AFF700553F80 /* Build configuration list for PBXNativeTarget "ZodoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B40D0282B87AFF700553F80 /* Debug */,
+				7B40D0292B87AFF700553F80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B40CFF52B87AFF500553F80 /* Project object */;
+}
