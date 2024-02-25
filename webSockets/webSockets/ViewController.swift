@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController, URLSessionWebSocketDelegate {
+    
     private var webSocket: URLSessionWebSocketTask?
     private var counter:Int = 0
     override func viewDidLoad() {
@@ -19,12 +20,15 @@ class ViewController: UIViewController, URLSessionWebSocketDelegate {
             delegateQueue: OperationQueue()
         )
         
-        let url = URL (
-            string: "wss://socketsbay.com/wss/v2/1/demo/")
-        
-        webSocket = session.webSocketTask(with: url!)
-        
-        webSocket?.resume()
+        let websocketURL = "wss://echo.websocket.org"
+        if let url = URL (
+            string: websocketURL)
+        {
+            webSocket = session.webSocketTask(with: url)
+            
+            /// this starts the websocket connection.
+            webSocket?.resume()
+        }
     }
     
     func ping() {
@@ -39,7 +43,7 @@ class ViewController: UIViewController, URLSessionWebSocketDelegate {
     func recieve () {
         
             print("Recieve is done")
-        webSocket?.receive(completionHandler: { [weak self] result in
+        webSocket?.receive(completionHandler: {[weak self] result in
             switch result {
                 case .success( let message ) :
                     switch message {
@@ -61,20 +65,30 @@ class ViewController: UIViewController, URLSessionWebSocketDelegate {
     }
     
     func send () {
-        
-            print("send is done")
-        DispatchQueue.global().asyncAfter(deadline: .now() + 1) {
-           
-            self.webSocket?
-                .send(
-                    .string("Send new message: \(Int.random(in: 0...1000))"),
-                    completionHandler: {  error in
-                        if let error = error {
-                            print( "Send error: \(error)")
-                        } else {
-                            self.send()
-                        }
-            })
+        DispatchQueue.global().asyncAfter(deadline: .now() + 1) { /// this allow us to wait, or determine the rate by which we send the frames to the backend.
+            
+            let imageName = "imageTrial"
+            let uiImage = UIImage(named: imageName)
+            if let imageBinary = uiImage?.jpegData(compressionQuality: 0.5) {
+                /// no need to conver the image into string, we can just send the data recieved from the .jpegData :)
+//                let hexString = imageBinary.map{ String(format: "%02x", $0)}.joined()
+//                var data = Data(capacity: hexString.count / 2)
+                self.webSocket?
+                    .send(
+//                        .string("image binary is : \(hexString)"), -> strings.
+                        .data(imageBinary), /// -> Data.
+                        
+                        completionHandler: {  error in
+                            if let error = error {
+                                print( "Send error: \(error)")
+                            } else {
+                                self.send()
+                                
+                                    print("send is done")
+                            }
+                        })
+                
+            }
         }
     }
     
@@ -101,7 +115,7 @@ class ViewController: UIViewController, URLSessionWebSocketDelegate {
         send()
         
         recieve()
-        
+//        close()
         print("All are done")
         
         }

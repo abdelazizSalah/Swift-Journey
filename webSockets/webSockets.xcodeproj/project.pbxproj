@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B4A58662B8AA71800C1976D /* imagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4A58652B8AA71800C1976D /* imagePicker.swift */; };
 		7BA355E42B7D9B0B0072DE3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA355E32B7D9B0B0072DE3B /* AppDelegate.swift */; };
 		7BA355E62B7D9B0B0072DE3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA355E52B7D9B0B0072DE3B /* SceneDelegate.swift */; };
 		7BA355E82B7D9B0B0072DE3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA355E72B7D9B0B0072DE3B /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B4A58652B8AA71800C1976D /* imagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagePicker.swift; sourceTree = "<group>"; };
 		7BA355E02B7D9B0B0072DE3B /* webSockets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webSockets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BA355E32B7D9B0B0072DE3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BA355E52B7D9B0B0072DE3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				7BA355E32B7D9B0B0072DE3B /* AppDelegate.swift */,
 				7BA355E52B7D9B0B0072DE3B /* SceneDelegate.swift */,
 				7BA355E72B7D9B0B0072DE3B /* ViewController.swift */,
+				7B4A58652B8AA71800C1976D /* imagePicker.swift */,
 				7BA355E92B7D9B0B0072DE3B /* Main.storyboard */,
 				7BA355EC2B7D9B0C0072DE3B /* Assets.xcassets */,
 				7BA355EE2B7D9B0C0072DE3B /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BA355E82B7D9B0B0072DE3B /* ViewController.swift in Sources */,
+				7B4A58662B8AA71800C1976D /* imagePicker.swift in Sources */,
 				7BA355E42B7D9B0B0072DE3B /* AppDelegate.swift in Sources */,
 				7BA355E62B7D9B0B0072DE3B /* SceneDelegate.swift in Sources */,
 			);
