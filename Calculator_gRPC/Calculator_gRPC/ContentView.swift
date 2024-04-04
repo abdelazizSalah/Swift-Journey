@@ -52,7 +52,7 @@ struct ContentView: View {
                     GRPCManager.shared.computeAverage()
                 },
                 label: {
-                    
+                    /// Working!!!!!
                         Text("Compute Average")
                 }
             

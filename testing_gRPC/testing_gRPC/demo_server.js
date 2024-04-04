@@ -1,3 +1,11 @@
+/*
+  This file is implementing gRPC protocol for a calculator application, implementing 4 methods 
+    1. Unary 
+    2. Server Streaming
+    3. Client Streaming
+    4. Bidirectional Streaming
+this was on 4/4/2024.
+*/
 const grpc = require('@grpc/grpc-js');
 const protoLoader = require('@grpc/proto-loader');
 const path = require('path');
