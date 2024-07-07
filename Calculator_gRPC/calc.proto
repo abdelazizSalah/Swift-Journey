@@ -3,10 +3,13 @@ package calc;
 service Calc {
 // Unary RPC method
 rpc Add (AddRequest) returns (AddResponse) {};
+    
 // Server Streaming RPC method
 rpc Fibo (FiboRequest) returns (stream FiboResponse) {};
+    
 // Client Streaming RPC method
 rpc ComputeAverage (stream ComputeAverageRequest) returns (ComputeAverageResponse){};
+    
 // Bidirectional Streaming RPC method
 rpc FindMaximum (stream FindMaximumRequest) returns (stream FindMaximumResponse){};
 }

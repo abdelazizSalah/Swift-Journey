@@ -6,6 +6,7 @@
     4. Bidirectional Streaming
 this was on 4/4/2024.
 */
+
 const grpc = require('@grpc/grpc-js');
 const protoLoader = require('@grpc/proto-loader');
 const path = require('path');
@@ -16,6 +17,7 @@ const packageDefinition = protoLoader.loadSync(protoPath);
 const protoDescriptor = grpc.loadPackageDefinition(packageDefinition);
 
 // Extract the service definition from the loaded proto file
+/// Formate: protoDescriptor.PackageName.ServiceName.service
 const calcService = protoDescriptor.calc.Calc.service;
 
 // Implement the gRPC service methods
@@ -72,6 +74,7 @@ const calcServer = {
     // Handle each number received in the stream from the client
     call.on('data', function (request) {
       const number = request.number;
+      console.log("called -:")
       if (number > maxNumber) {
         maxNumber = number; // Update the maximum number if a greater number is received
         call.write({ maximum: maxNumber }); // Stream back the new maximum number to the client
@@ -92,7 +95,7 @@ const server = new grpc.Server();
 server.addService(calcService, calcServer);
 
 // Bind the server to the specified address and port
-server.bindAsync('0.0.0.0:50051', grpc.ServerCredentials.createInsecure(), (err, port) => {
+server.bindAsync('127.0.0.1:50051', grpc.ServerCredentials.createInsecure(), (err, port) => {
   if (err) {
     console.error('Server bind failed:', err);
   } else {

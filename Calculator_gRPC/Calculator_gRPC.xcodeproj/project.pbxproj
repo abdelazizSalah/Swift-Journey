@@ -149,9 +149,9 @@
 		7B467ACF2BBF456900274DCB /* gRPC_Content */ = {
 			isa = PBXGroup;
 			children = (
+				7B467AD02BBF45B900274DCB /* calc.proto */,
 				7B467AD22BBF45B900274DCB /* calc.grpc.swift */,
 				7B467AD12BBF45B900274DCB /* calc.pb.swift */,
-				7B467AD02BBF45B900274DCB /* calc.proto */,
 				7B467AD62BBF45F400274DCB /* gRPC_Manager.swift */,
 			);
 			path = gRPC_Content;

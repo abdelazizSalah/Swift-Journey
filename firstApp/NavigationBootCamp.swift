@@ -18,6 +18,8 @@ struct NavigationBootCamp: View {
     var body: some View {
         NavigationView() {
             ScrollView () {
+               
+                
                 NavigationLink("Go the next Screen", destination: NavigationScreen())
                 Text("This is a Navigation")
                 Text("This is a Navigation2")

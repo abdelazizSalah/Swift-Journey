@@ -13,7 +13,7 @@ import SwiftUI
 struct firstAppApp: App {
     var body: some Scene {
         WindowGroup {
-            VoiceOverBootcamp   ()
+            ObjectSavingScreen   ()
         }
     }
 }
