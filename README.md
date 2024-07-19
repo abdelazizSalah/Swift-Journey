@@ -2,7 +2,7 @@
 
 Welcome to my Swift Playground Repository! This collection contains various small projects and code snippets developed during my journey to learn and master Swift. Each project explores different aspects of Swift programming, showcasing my progress and experimentation.
 
-I follow (Swiftul Thinking Channel)[https://www.youtube.com/@SwiftfulThinking] during my learning.
+I follow [Swiftful Thinking Channel](https://www.youtube.com/@SwiftfulThinking) during my learning.
 
 ## Contents
 
